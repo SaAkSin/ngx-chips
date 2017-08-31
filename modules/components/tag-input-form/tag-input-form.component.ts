@@ -17,7 +17,7 @@ import {
 
 @Component({
     selector: 'tag-input-form',
-    styleUrls: [ './tag-input-form.style.scss' ],
+    styleUrls: [ './tag-input-form.style.css' ],
     templateUrl: './tag-input-form.template.html'
 })
 export class TagInputForm {

@@ -31,9 +31,9 @@ const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigat
 @Component({
     selector: 'tag',
     templateUrl: './tag.template.html',
-    styleUrls: [ './tag-component.style.scss' ]
+    styleUrls: [ './tag-component.style.css' ]
 })
-export class TagComponent {    
+export class TagComponent {
     /**
      * @name model {TagModel}
      */
@@ -292,7 +292,7 @@ export class TagComponent {
     private disableEditMode($event?: KeyboardEvent): void {
         const classList = this.element.nativeElement.classList;
         const input = this.getContentEditableText();
-        
+
         this.editing = false;
         classList.remove('tag--editing');
 
